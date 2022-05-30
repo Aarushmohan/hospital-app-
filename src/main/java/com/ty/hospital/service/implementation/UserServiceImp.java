@@ -9,6 +9,7 @@ import com.ty.hospital.service.UserService;
 
 public class UserServiceImp implements UserService {
 	UserDaoImp userDaoImp = new UserDaoImp();
+
 	public User saveUser(User user) {
 		return userDaoImp.saveUser(user);
 	}
@@ -22,11 +23,11 @@ public class UserServiceImp implements UserService {
 	}
 
 	public User getUserById(int id) {
-		return userDaoImp.getUserById(id) ;
+		return userDaoImp.getUserById(id);
 	}
 
-	public User updateUser(User user,int id) {
-		return userDaoImp.updateUser(user,id);
+	public User updateUser(User user, int id) {
+		return userDaoImp.updateUser(user, id);
 	}
 
 	public User deleteUserById(int id) {

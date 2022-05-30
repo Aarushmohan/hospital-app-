@@ -12,12 +12,12 @@ public class TestSaveHospital {
 		Hospital hospital = new Hospital();
 		hospital.setName("Appolo");
 		hospital.setGstNumber("APPIn323");
-		
+
 		Branch branch = new Branch();
 		branch.setName("BTR");
 		branch.setEmail("btrapp@mail.com");
 		branch.setPhone(873456789);
-		
+
 		Branch branch2 = new Branch();
 		branch2.setName("BTM");
 		branch2.setEmail("btmapp@mail.com");
@@ -26,17 +26,14 @@ public class TestSaveHospital {
 		List<Branch> list = new ArrayList<Branch>();
 		list.add(branch);
 		list.add(branch2);
-		
+
 		hospital.setBranch(list);
-		
+
 		HospitalServiceImp hospitalServiceImp = new HospitalServiceImp();
 		Hospital hospital2 = hospitalServiceImp.saveHospital(hospital);
-		if(hospital2 != null)
-		{
+		if (hospital2 != null) {
 			System.out.println("Data is inserted");
-		}
-		else
-		{
+		} else {
 			System.out.println("Data is not found");
 		}
 	}

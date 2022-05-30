@@ -11,14 +11,12 @@ public class TestSaveUser {
 		user.setPassword("ramu@123");
 		user.setPhone(987654322);
 		user.setRole("Admin");
-		
+
 		UserServiceImp userServiceImp = new UserServiceImp();
 		User user1 = userServiceImp.saveUser(user);
-		if(user1 != null)
-		{
+		if (user1 != null) {
 			System.out.println("Data is inserted");
-		}
-		else {
+		} else {
 			System.out.println("No data is Available");
 		}
 	}

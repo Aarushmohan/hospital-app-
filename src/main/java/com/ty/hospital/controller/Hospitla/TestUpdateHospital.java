@@ -8,15 +8,12 @@ public class TestUpdateHospital {
 		Hospital hospital = new Hospital();
 		hospital.setName("TFFH");
 		hospital.setGstNumber("TFFIN123");
-		
+
 		HospitalServiceImp hospitalServiceImp = new HospitalServiceImp();
 		Hospital hospital1 = hospitalServiceImp.updateHospital(hospital, 1);
-		if(hospital1 != null)
-		{
+		if (hospital1 != null) {
 			System.out.println("Data update successfully");
-		}
-		else
-		{
+		} else {
 			System.out.println("No data is found");
 		}
 	}

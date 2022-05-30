@@ -9,11 +9,9 @@ public class TestValidateUser {
 	public static void main(String[] args) {
 		UserServiceImp userServiceImp = new UserServiceImp();
 		List<User> list = userServiceImp.validateUser("raju@mail.com", "raju@123");
-		if(list.size()>0)
-		{
+		if (list.size() > 0) {
 			System.out.println("User is available");
-		}
-		else {
+		} else {
 			System.out.println("No data is Available");
 		}
 	}

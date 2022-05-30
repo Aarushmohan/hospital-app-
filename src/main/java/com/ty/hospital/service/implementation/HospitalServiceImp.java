@@ -6,9 +6,9 @@ import com.ty.hospital.dao.implematation.HospitalDaoImp;
 import com.ty.hospital.dto.Hospital;
 import com.ty.hospital.service.HospitalService;
 
-public class HospitalServiceImp implements HospitalService{
+public class HospitalServiceImp implements HospitalService {
 	HospitalDaoImp hospitalDaoImp = new HospitalDaoImp();
-	
+
 	public Hospital saveHospital(Hospital hospital) {
 		return hospitalDaoImp.saveHospital(hospital);
 	}

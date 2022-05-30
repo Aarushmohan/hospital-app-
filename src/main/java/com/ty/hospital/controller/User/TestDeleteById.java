@@ -7,12 +7,9 @@ public class TestDeleteById {
 	public static void main(String[] args) {
 		UserServiceImp userServiceImp = new UserServiceImp();
 		User user = userServiceImp.deleteUserById(2);
-		if(user != null)
-		{
+		if (user != null) {
 			System.out.println("Deleted succesfully");
-		}
-		else
-		{
+		} else {
 			System.out.println("No data is found");
 		}
 	}

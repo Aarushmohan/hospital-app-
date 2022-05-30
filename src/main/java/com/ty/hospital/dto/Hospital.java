@@ -21,29 +21,37 @@ public class Hospital {
 	@OneToMany(cascade = CascadeType.ALL)
 	@JoinColumn
 	private List<Branch> branch;
+
 	public int getId() {
 		return id;
 	}
+
 	public void setId(int id) {
 		this.id = id;
 	}
+
 	public String getName() {
 		return name;
 	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
+
 	public String getGstNumber() {
 		return gstNumber;
 	}
+
 	public void setGstNumber(String gstNumber) {
 		this.gstNumber = gstNumber;
 	}
+
 	public List<Branch> getBranch() {
 		return branch;
 	}
+
 	public void setBranch(List<Branch> branch) {
 		this.branch = branch;
 	}
-	
+
 }

@@ -6,11 +6,9 @@ public class TestDeleteHospitalById {
 	public static void main(String[] args) {
 		HospitalServiceImp hospitalServiceImp = new HospitalServiceImp();
 		boolean deleteHospital = hospitalServiceImp.delteHospitalById(2);
-		if(deleteHospital != false)
-		{
+		if (deleteHospital != false) {
 			System.out.println("Deleted sucessfully...!");
-		}
-		else {
+		} else {
 			System.out.println("No data is found");
 		}
 	}
