@@ -1,11 +1,16 @@
 package com.ty.hospital.dto;
 
+import java.util.List;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 
 @Entity
 public class Branch {
@@ -15,6 +20,37 @@ public class Branch {
 	private String name;
 	private long phone;
 	private String email;
+	@ManyToOne
+	@JoinColumn
+	private Hospital hospital;
+	@OneToOne(cascade =CascadeType.ALL,mappedBy = "branch")
+	private Address address;
+	@OneToMany(mappedBy = "branch")
+	private List<Encounter> encounter;
+	
+	public List<Encounter> getEncounter() {
+		return encounter;
+	}
+
+	public void setEncounter(List<Encounter> encounter) {
+		this.encounter = encounter;
+	}
+
+	public Address getAddress() {
+		return address;
+	}
+
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+
+	public Hospital getHospital() {
+		return hospital;
+	}
+
+	public void setHospital(Hospital hospital) {
+		this.hospital = hospital;
+	}
 
 	public int getId() {
 		return id;

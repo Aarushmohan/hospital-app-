@@ -2,7 +2,6 @@ package com.ty.hospital.service.implementation;
 
 import java.util.List;
 
-import com.ty.hospital.dao.UserDao;
 import com.ty.hospital.dao.implematation.UserDaoImp;
 import com.ty.hospital.dto.User;
 import com.ty.hospital.service.UserService;

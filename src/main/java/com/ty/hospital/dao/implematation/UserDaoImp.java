@@ -2,7 +2,6 @@ package com.ty.hospital.dao.implematation;
 
 import java.util.List;
 
-import javax.persistence.Embeddable;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;

@@ -1,9 +1,14 @@
 package com.ty.hospital.dto;
 
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Person {
@@ -15,6 +20,16 @@ public class Person {
 	private long phone;
 	private String gender;
 	private int age;
+	@OneToMany(cascade = CascadeType.ALL, mappedBy = "person")
+	private List<Encounter> encounter;
+	
+	public List<Encounter> getEncounter() {
+		return encounter;
+	}
+
+	public void setEncounter(List<Encounter> encounter) {
+		this.encounter = encounter;
+	}
 
 	public int getId() {
 		return id;
