@@ -19,6 +19,22 @@
 			<artifactId>hibernate-core</artifactId>
 			<version>5.6.5.Final</version>
 		</dependency>
+	    
+	    
 
 	</dependencies>
+<distributionManagement>
+	<repository>
+		<id>hospital-app</id>
+		<name>Internal Releases</name>
+		<url>http://10.12.124.82:8081/#admin/repository/repositories:hospital-app-releases</url>
+	</repository>
+ 
+	<snapshotRepository>
+		<id>hospital-app</id>
+		<name>Internal Releases</name>
+		<url>http://10.12.124.82:8081/#admin/repository/repositories:hospital-app-snapshots</url>
+	</snapshotRepository>
+
+</distributionManagement>
 </project>
