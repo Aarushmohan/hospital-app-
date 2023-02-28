@@ -34,16 +34,7 @@
 	</dependencies>
 	
 	
-	<build>
-		
-		<plugin>            
-		  <groupId>org.apache.maven.plugins</groupId>
-		  <artifactId>maven-war-plugin</artifactId>
-		  <configuration>
-		    <webXml>src\main\webapp\WEB-INF\web.xml</webXml>        
-		  </configuration>
-		</plugin>
-	</build>
+	
 
 <distributionManagement>
 	<repository>
@@ -59,4 +50,17 @@
 	</snapshotRepository>
 
 </distributionManagement>
+	
+<build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <artifactId>maven-war-plugin</artifactId>
+                    <version>3.3.2</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+ </build>
+	
+	
 </project>
