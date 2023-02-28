@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.ty.hospitalapp</groupId>
   <artifactId>hibernate-hospital-app</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0.1 -SNAPSHOT</version>
     <dependencies>
 		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
 		<dependency>
