@@ -27,7 +27,7 @@
 	<repository>
 		<id>hospital-app-releases</id>
 		<name>hospital-app-releases</name>
-		<url>http://10.12.124.82:8081/repository/hospital-app-releases/</url>
+		<url>http://10.12.124.82:8081/repository/hospital-app-release/</url>
 	</repository>
  
 	<snapshotRepository>
