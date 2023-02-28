@@ -5,7 +5,7 @@
   <packaging>war</packaging>
   <version>1.0.1-SNAPSHOT</version>
   <name>hibernate-hospital-app</name>
-  <url>http://maven.apache.org</url>
+<!--  <url>http://maven.apache.org</url> -->
     <dependencies>
 		
 			<!-- https://mvnrepository.com/artifact/junit/junit -->
