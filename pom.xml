@@ -58,7 +58,7 @@
                     <artifactId>maven-war-plugin</artifactId>
                     <version>3.3.2</version>
 	  <configuration>
-	    <persistenceXml>src\main\webapp\WEB-INF\web.xml</persistenceXml>        
+	    <persistenceXml>/src/main/resources/META-INF/persistence.xml</persistenceXml>        
 	  </configuration>
                 </plugin>
             </plugins>
