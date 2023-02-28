@@ -54,13 +54,13 @@
 <build>
         <pluginManagement>
             <plugins>
-                <plugin>
-                    <artifactId>maven-war-plugin</artifactId>
-                    <version>3.3.2</version>
-	  <configuration>
-	    <persistenceXml>/src/main/resources/META-INF/persistence.xml</persistenceXml>        
-	  </configuration>
-                </plugin>
+	<plugin>
+	    <artifactId>maven-war-plugin</artifactId>
+	    <version>2.4</version>
+	    <configuration>
+		<failOnMissingWebXml>false</failOnMissingWebXml>
+	    </configuration>
+	</plugin>
             </plugins>
         </pluginManagement>
  </build>
