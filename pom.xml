@@ -25,13 +25,13 @@
 	</dependencies>
 <distributionManagement>
 	<repository>
-		<id>hospital-app</id>
+		<id>hospital-app-releases</id>
 		<name>Internal Releases</name>
 		<url>http://10.12.124.82:8081/#admin/repository/repositories:hospital-app-releases</url>
 	</repository>
  
 	<snapshotRepository>
-		<id>hospital-app</id>
+		<id>hospital-app-snapshots</id>
 		<name>Internal Releases</name>
 		<url>http://10.12.124.82:8081/#admin/repository/repositories:hospital-app-snapshots</url>
 	</snapshotRepository>
