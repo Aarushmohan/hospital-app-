@@ -3,3 +3,9 @@
 	<username>admin</username>
 	<password>admin123</password>
 </server>
+<server>
+	<id>hospital-app-releases</id>
+	<username>admin</username>
+	<password>admin123</password>
+</server>
+
