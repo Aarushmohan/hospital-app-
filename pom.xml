@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.ty.hospitalapp</groupId>
   <artifactId>hibernate-hospital-app</artifactId>
-  <packaging>.war</packaging>
+  <packaging>war</packaging>
   <version>1.0.1-SNAPSHOT</version>
   <name>hibernate-hospital-app</name>
 <!--  <url>http://maven.apache.org</url> -->
