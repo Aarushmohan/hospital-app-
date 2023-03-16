@@ -1,20 +1,33 @@
 package com.ty.hospital.dto;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Item {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
-	private int medOrder_id;
 	private String name;
 	private String type;
 	private int quantity;
 	private double cost;
+	@ManyToOne(cascade = CascadeType.ALL)
+	@JoinColumn
+	private MedOrder medOrder;
+
+	public MedOrder getMedOrder() {
+		return medOrder;
+	}
+
+	public void setMedOrder(MedOrder medOrder) {
+		this.medOrder = medOrder;
+	}
 
 	public int getId() {
 		return id;
@@ -22,14 +35,6 @@ public class Item {
 
 	public void setId(int id) {
 		this.id = id;
-	}
-
-	public int getMedOrder_id() {
-		return medOrder_id;
-	}
-
-	public void setMedOrder_id(int medOrder_id) {
-		this.medOrder_id = medOrder_id;
 	}
 
 	public String getName() {

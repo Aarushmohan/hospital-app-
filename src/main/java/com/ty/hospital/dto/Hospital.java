@@ -8,8 +8,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 
 @Entity
 public class Hospital {
@@ -18,9 +18,11 @@ public class Hospital {
 	private int id;
 	private String name;
 	private String gstNumber;
-	@OneToMany(cascade = CascadeType.ALL)
-	@JoinColumn
+	@OneToMany(cascade = CascadeType.ALL,mappedBy = "hospital")
 	private List<Branch> branch;
+
+
+	
 
 	public int getId() {
 		return id;

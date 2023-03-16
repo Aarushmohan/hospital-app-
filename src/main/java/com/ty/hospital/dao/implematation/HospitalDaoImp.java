@@ -9,7 +9,6 @@ import javax.persistence.Persistence;
 import javax.persistence.Query;
 
 import com.ty.hospital.dto.Hospital;
-import com.ty.hospital.dto.User;
 
 public class HospitalDaoImp implements com.ty.hospital.dao.HospitalDao {
 	EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("prashi");
