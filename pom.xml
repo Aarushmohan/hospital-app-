@@ -5,6 +5,10 @@
   <packaging>war</packaging>
   <version>1.0.1-SNAPSHOT</version>
   <name>hibernate-hospital-app</name>
+	<properties>
+     <maven.compiler.source>1.8</maven.compiler.source>
+     <maven.compiler.target>1.8</maven.compiler.target>
+</properties>
 <!--  <url>http://maven.apache.org</url> -->
     <dependencies>
 		
