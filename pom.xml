@@ -49,14 +49,14 @@
 <distributionManagement>
 	<repository>
 		<id>nexus</id>
-		<name>helloworld-releases</name>
-		<url>http://10.12.124.82:8081/repository/helloworld-release/</url>
+		<name>hello-world-releases</name>
+		<url>http://10.12.124.82:8081/repository/hello-world-release/</url>
 	</repository>
  
 	<snapshotRepository>
 		<id>nexus</id>
-		<name>helloworld-snapshots</name>
-		<url>http://10.12.124.82:8081/repository/helloworld-snapshots/</url>
+		<name>hello-world-snapshots</name>
+		<url>http://10.12.124.82:8081/repository/hello-world-snapshots/</url>
 	</snapshotRepository>
 
 </distributionManagement>
