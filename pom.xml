@@ -3,7 +3,7 @@
   <groupId>com.ty.hospitalapp</groupId>
   <artifactId>hibernate-hospital-app</artifactId>
   <packaging>war</packaging>
-  <version>1.0.1-SNAPSHOT</version>
+  <version>0.0.2-SNAPSHOT</version>
   <name>hibernate-hospital-app</name>
 	<properties>
      <maven.compiler.source>1.8</maven.compiler.source>
